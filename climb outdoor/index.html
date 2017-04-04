@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simplify</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+        var path;
+
+        function onMouseDown(event) {
+
+            // Create a new path and set its stroke color:
+            path = new Path({
+                strokeColor: 'yellow',
+                strokeWidth: '3'
+            });
+        }
+
+        // While the user drags the mouse, points are added to the path
+        // at the position of the mouse:
+        function onMouseDrag(event) {
+            path.add(event.point);
+        }
+
+        // When the mouse is released, we simplify the path:
+        function onMouseUp(event) {
+            var segmentCount = path.segments.length;
+
+            // When the mouse is released, simplify it:
+            path.simplify(30);
+        }
+
+        document.getElementById("reset").addEventListener("mousedown", function(){
+            project.activeLayer.removeChildren();
+        });
+
+    </script>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<div class="phone-shadow">
+
+<div class="phone">
+
+
+    <div class="wrapper">
+            <div id="screen" class="draw">
+                <div class="header">
+                    <div id="reset"></div>
+                    <span>Add Details</span>
+                    <div id="next"></div>
+                </div>
+                <div class="container">
+                    <canvas id="canvas" resize></canvas>
+                    <div class="list">
+                        <input class="crag" type="text" placeholder="Crag name">
+                        <ol class="input-list inputField clearfix"></ol>
+                        <!-- <div class="submit">Save</div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        <div id="screen" class="pick">
+            <div class="header">
+                <span>Choose Photo</span>
+            </div>
+
+            <div class="imgList">
+                <ul>
+                    <li class="date">2 June 2015</li>
+                    <li><img src="img/rock01-1.jpg" alt=""></li>
+                    <li><img src="img/rock02-1.jpg" alt=""></li>
+                    <li><img src="img/rock03-1.jpg" alt=""></li>
+                    <li><img src="img/rock04-1.jpg" alt=""></li>
+                    <li><img src="img/rock05-1.jpg" alt=""></li>
+                    <li><img src="img/rock06-1.jpg" alt=""></li>
+                    <li><img src="img/rock07-1.jpg" alt=""></li>
+                    <li><img src="img/rock08-1.jpg" alt=""></li>
+                    <li><img src="img/rock09-1.jpg" alt=""></li>
+                    <li><img src="img/rock01-1.jpg" alt=""></li>
+                    <li><img src="img/rock02-1.jpg" alt=""></li>
+                    <li><img src="img/rock03-1.jpg" alt=""></li>
+                    <li><img src="img/rock04-1.jpg" alt=""></li>
+
+                    <li class="date">15 September 2015</li>
+                    <li><img src="img/rock05-1.jpg" alt=""></li>
+                    <li><img src="img/rock06-1.jpg" alt=""></li>
+                    <li><img src="img/rock07-1.jpg" alt=""></li>
+                    <li><img src="img/rock08-1.jpg" alt=""></li>
+                    <li><img src="img/rock09-1.jpg" alt=""></li>
+                    <li><img src="img/rock01-1.jpg" alt=""></li>
+                    <li><img src="img/rock02-1.jpg" alt=""></li>
+                    
+                    <li class="date">6 December 2015</li>
+                    <li><img src="img/rock03-1.jpg" alt=""></li>
+                    <li><img src="img/rock04-1.jpg" alt=""></li>
+                    <li><img src="img/rock05-1.jpg" alt=""></li>
+                    <li><img src="img/rock06-1.jpg" alt=""></li>
+                    <li><img src="img/rock07-1.jpg" alt=""></li>
+                    <li><img src="img/rock08-1.jpg" alt=""></li>
+                    <li><img src="img/rock09-1.jpg" alt=""></li>
+                    <li><img src="img/rock01-1.jpg" alt=""></li>
+                    <li><img src="img/rock02-1.jpg" alt=""></li>
+                    <li><img src="img/rock03-1.jpg" alt=""></li>
+                    <li><img src="img/rock04-1.jpg" alt=""></li>
+                    <li><img src="img/rock05-1.jpg" alt=""></li>
+                    
+                    <li class="date">10 December 2015</li>
+                    <li><img src="img/rock09-1.jpg" alt=""></li>
+                    <li><img src="img/rock01-1.jpg" alt=""></li>
+                    <li><img src="img/rock02-1.jpg" alt=""></li>
+                    <li><img src="img/rock03-1.jpg" alt=""></li>
+                    <li><img src="img/rock04-1.jpg" alt=""></li>
+                    <li><img src="img/rock05-1.jpg" alt=""></li>
+                    <li><img src="img/rock06-1.jpg" alt=""></li>
+                    <li><img src="img/rock07-1.jpg" alt=""></li>
+                    <li><img src="img/rock08-1.jpg" alt=""></li>
+                    <li><img src="img/rock09-1.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+    </div> <!-- wrapper -->
+
+</div> <!-- phone -->
+
+</div> <!-- shadow -->
+
+    
+<script src="script.js"></script>
+
+</body>
+</html>
