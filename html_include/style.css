@@ -1,0 +1,9 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+article.main {
+    width: 90.125vw;
+    margin-left: 4.9375vw;
+    /* margin: 0px 20px 0px 20px; */
+}
