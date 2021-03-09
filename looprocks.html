@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="loop" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mike Firsov - Digital Product Designer</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="header"></div>
+		<h1 class="project">Marketplace app for smarter stone, soil and filler material management</h1>
+		<div class="project-info">
+			<div class="client">
+				<p class="project-title">Client</p>
+				<p class="project-caption">NCC / Loop Rocks</p>
+			</div>
+			<div class="role">
+				<p class="project-title">My Role</p>
+				<p class="project-caption">UX Design, Research, Interaction Design, Prototyping, Usability Testing, Visual Design</p>
+			</div>
+		</div>
+	</div> <!-- closing container -->
+		<img class="project-header-img" src="images/looprocks-cover.jpg" alt="Test image">
+	<div class="container"> <!-- reopening second container -->
+		<div class="project-content">
+			<div class="project-section">
+				<h2>Challenge</h2>
+				<div class="project-text">
+					<p class="subtitle">
+						How might we create tools to enhance user communication and bring more deals to the app?
+					</p>
+					<p>
+						Loop Rocks is a marketplace app for smarter stone, soil and filler material management. The app helps construction companies reduce costs and environmental impact by reusing materials instead of buying new ones. When I joined the project, Loop Rocks had already launched an MVP app and had an audience of around 10 000 users. My tasks were to identify existing issues and redesign the app.
+					</p>
+					<p>
+						From the analytics we knew that even though users were creating plenty of ads, there were not enough deals happening inside the app. Which in turn lead to missed opportunities to help users and direct revenue loss.
+					</p>
+					<div class="highlight">
+						<p class="topic">User problem</p>
+						Inadequate information about materials inside the app, resulted in users missing better deals, higher transportation costs and left users more vulnerable to various scams.
+					</div><div class="highlight">
+						<p class="topic">Business problem</p>
+						With the deals happening outside the app, business was losing revenue and had fewer opportunities to assist users.
+					</div>
+				</div> <!-- project-text -->
+			</div> <!-- project section -->
+			<p>
+				<img src="images/looprocks/looprocks-interviews.jpg" alt="Loop Rocks Research">
+			</p>
+			<div class="project-section">
+				<h2>Research</h2>
+				<div class="project-text">
+					<p class="subtitle">
+						Looking for patterns emerging from user interviews
+					</p>
+					<p>
+						To understand the causes of the issue and find new product opportunities we conducted series of user interviews and usability tests in the existing app.
+					</p>
+					<p>
+						One of the difficulties was products broad target audience. The team has been targeting owners of the small construction companies, construction site managers at medium-large sized companies and even private users. For this research phase we decided to focus on construction site managers at medium-large sized companies.
+					</p>
+					<p>
+						After visiting multiple construction sites and talking to site managers and small business owners we started noticing the common themes. It became clear that among other issues, one of the biggest obstacles for making deals inside the app was the lack of trust. Users receiving materials needed to check them in person and could not commit to deals based just on the information inside the app.
+						<ul class="emoji">
+							<li>
+								🚧&nbsp;Construction companies needed a detailed description of materials to comply with strict industry standards
+							</li>
+							<li>
+								🤬&nbsp;Private users didn't know which materials they can use for their projects. In many cases users ended up getting frustrated after receiving wrong materials
+							</li>
+							<li>
+								🔍&nbsp;Many deals happened outside the app because users needed to drive to the pickup location and check material quality in person
+							</li>
+							<li>
+								👬&nbsp;After creating an ad in the app many users still ended up reaching out and dealing with their old contacts
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<p>
+				<img src="images/looprocks/looprocks-project-timeline.jpg" alt="Loop Rocks Project Timeline">
+				<p class="caption">Mapping of user pain-points and business oportunities to a typical project timeline</p>
+			</p>
+			<p>
+				<img src="images/looprocks/looprocks-personas.jpg" alt="Loop Rocks Personas">
+			</p>
+			<div class="project-section">
+				<h2>Sketching, prototyping & testing</h2>
+				<div class="project-text">
+					<p class="subtitle">
+						Guide for adding images
+					</p>
+					<p>
+						After sketching out and testing some initial ideas we focused on the one that helped users examine the details of the material and simplify decision making. We included a guide for adding images as a part of the ad creation process, specifying which zoom levels were needed and explaining which details were impotant to focus on.
+					</p>
+					<p>
+						<img src="images/looprocks/looprocks-photo-upload.jpg" alt="Looprocks photo upload">
+					</p>
+					<p>
+						<strong>Before:</strong> Users could select photos from the library, but without instructions it was unclear which images were needed
+					</p>
+					<p>
+						<strong>After:</strong> Uploading images into specific categories provided a simple guide and made it easier to upload meaningful photos
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p class="subtitle">
+						Improved filtering
+					</p>
+					<p>
+						Interviews revealed that in many cases there was no need for an exact material or amount match. Sometimes the material doesn’t need to be pure or the client would be happy to mix materials from a few sources. We redesigned the filtering UI and updated the filtering algorithm to allow for more matches.
+					</p>
+					<p>
+						<img src="images/looprocks/looprocks-filtering.jpg" alt="Looprocks filtering">
+					</p>
+					<p>
+						<ul>
+							<li>
+								Clearer hierarchy of elements
+							</li>
+							<li>
+								Emphasis on interactive elements
+							</li>
+							<li>
+								Appropriate input types
+							</li>
+							<li>
+								Flexible matching for material type
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="project-section">
+				<h2>Results</h2>
+				<div class="project-text">
+					<p class="subtitle">
+						What did we learn?
+					</p>
+					<p>
+						It can be difficult to introduce new digital tools to a conservative industry, but providing enough flexibility and guidance helps lower these barriers for users. In our case the detailed guide for image uploading helped users create more ads and make more deals inside the app.
+					</p>
+					<div class="highlight">
+						<p class="topic">
+							Copy is important
+						</p>
+						By talking to construction site managers and learning their vocabulary and specific terminology, we made the interface more understandable by speaking the users language.
+					</div>
+					<div class="highlight">
+						<p class="topic">
+							New product opportunities
+						</p>
+						The interviews were focused around the role of the app in customers work processes and along the way we learned a lot about site managers day-to-day work and needs. These findings gave the design team plenty of insights for new product opportunities.
+					</div>
+				</div>
+			</div>
+			<p>
+				<img src="images/looprocks/looprocks-bonus-views.jpg" alt="Loop Rocks other views">
+			</p>
+			<p>
+				<img src="images/looprocks/looprocks-illustrations.png" alt="Loop Rocks illustrations">
+			</p>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
