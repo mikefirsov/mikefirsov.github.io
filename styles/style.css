@@ -340,15 +340,10 @@ ul.emoji {
 	transform: perspective(1000px) translate3d(0px, 0px, 0px) rotate3d(1, 1, 1, 0deg);
 	movement": {
 	"perspective" : 1000,
-	"translateX" : -10,
-	"translateY" : -10,
-	"translateZ" : 20,
-	"rotateX" : 2,
-	"rotateY" : 2,
-	"rotateZ" : 2
+	"translateZ" : 20
 }
 
-@media (min-width: 60rem){
+@media (min-width: 70rem){
 	h1 {
 		font-size: 4rem;
 		line-height: 1.4;
