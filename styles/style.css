@@ -18,7 +18,8 @@ body, ul, li, p, h1, h2, h3, h4 {
 body {
 	font-family: 'Manrope', sans-serif;
 	letter-spacing: 0.4px;
-	font-size: 1.25rem;
+	/*font-size: 1.25rem;*/
+	font-size: 1rem;
 	font-weight: 400;
 }
 
@@ -187,7 +188,8 @@ h2 a, h3 a {
 /*-----Typography-----*/
 
 h1, h2 {
-	font-size: 2.5rem;
+	font-size: 1.75rem;
+	/*font-size: 2.5rem;*/
 	line-height: 1.4;
 	font-weight: 600;
 	margin: 4rem 0;
@@ -286,7 +288,7 @@ p {
 }
 
 .quote {
-	font-family: 'Manrope', sans-serif;
+	/*font-family: 'Manrope', sans-serif;*/
 	font-size: 3rem;
 	/*color: rgba(0,0,0, 0.4);*/
 	color: inherit;
@@ -344,6 +346,11 @@ ul.emoji {
 }
 
 @media (min-width: 70rem){
+	body {
+		font-size: 1.25rem;
+	}
+
+
 	h1 {
 		font-size: 4rem;
 		line-height: 1.4;
